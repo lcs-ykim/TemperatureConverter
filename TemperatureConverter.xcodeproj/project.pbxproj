@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7F32F4E925C9E88B00BC2864 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F32F4E825C9E88B00BC2864 /* main.swift */; };
+		7F32F4F125C9E8E500BC2864 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F32F4F025C9E8E500BC2864 /* extensions.swift */; };
+		7F32F4F425CB0C3300BC2864 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F32F4F325CB0C3300BC2864 /* Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,14 @@
 /* Begin PBXFileReference section */
 		7F32F4E525C9E88B00BC2864 /* TemperatureConverter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TemperatureConverter; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F32F4E825C9E88B00BC2864 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7F32F4F025C9E8E500BC2864 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		7F32F4F325CB0C3300BC2864 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		7F32F4FC25CB0D2500BC2864 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		7F32F4FE25CB0D2500BC2864 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		7F32F50025CB0D2500BC2864 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		7F32F50325CB0D2500BC2864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ActionViewController.xib; sourceTree = "<group>"; };
+		7F32F50525CB0D2500BC2864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F32F50625CB0D2500BC2864 /* TimeConverter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeConverter.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +51,10 @@
 		7F32F4DC25C9E88B00BC2864 = {
 			isa = PBXGroup;
 			children = (
+				7F32F4F325CB0C3300BC2864 /* Functions.swift */,
+				7F32F4F025C9E8E500BC2864 /* extensions.swift */,
 				7F32F4E725C9E88B00BC2864 /* TemperatureConverter */,
+				7F32F4FB25CB0D2500BC2864 /* TimeConverter */,
 				7F32F4E625C9E88B00BC2864 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +73,19 @@
 				7F32F4E825C9E88B00BC2864 /* main.swift */,
 			);
 			path = TemperatureConverter;
+			sourceTree = "<group>";
+		};
+		7F32F4FB25CB0D2500BC2864 /* TimeConverter */ = {
+			isa = PBXGroup;
+			children = (
+				7F32F4FC25CB0D2500BC2864 /* Media.xcassets */,
+				7F32F4FE25CB0D2500BC2864 /* icon.icns */,
+				7F32F50025CB0D2500BC2864 /* ActionViewController.swift */,
+				7F32F50225CB0D2500BC2864 /* ActionViewController.xib */,
+				7F32F50525CB0D2500BC2864 /* Info.plist */,
+				7F32F50625CB0D2500BC2864 /* TimeConverter.entitlements */,
+			);
+			path = TimeConverter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,10 +146,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F32F4E925C9E88B00BC2864 /* main.swift in Sources */,
+				7F32F4F125C9E8E500BC2864 /* extensions.swift in Sources */,
+				7F32F4F425CB0C3300BC2864 /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7F32F50225CB0D2500BC2864 /* ActionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F32F50325CB0D2500BC2864 /* Base */,
+			);
+			name = ActionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7F32F4EA25C9E88B00BC2864 /* Debug */ = {
